@@ -1,6 +1,6 @@
 var assert   = require('assert');
 var _        = require('lodash');
-var getInput = require('../lib/getInput');
+var getInput = require('../../lib/getInput');
 
 
 describe('#getInput', function () {
@@ -23,7 +23,7 @@ describe('#getInput', function () {
     getInput('input2.txt').done(function () { }, function (err) {
       assert(_.isError(err));
 
-      assert.strictEqual(err.toString(), 'Error: input with `fileName` does not exist');
+      assert.strictEqual(err.toString(), 'Error: input with `fileName` "input2.txt" does not exist');
 
       done();
     });

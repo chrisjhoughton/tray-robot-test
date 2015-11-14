@@ -1,6 +1,6 @@
 var assert     = require('assert');
 var _          = require('lodash');
-var parseInput = require('../lib/parseInput');
+var parseInput = require('../../lib/parseInput');
 
 
 describe('#parseInput', function () {

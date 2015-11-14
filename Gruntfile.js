@@ -8,11 +8,17 @@ module.exports = function (grunt) {
     },
 
     mochaTest: {
-      test: {
+      unit: {
         options: {
           reporter: 'mocha-unfunk-reporter'
         },
-        src: ['tests/*_test.js']
+        src: ['tests/unit/*_test.js']
+      },
+      acceptance: {
+        options: {
+          reporter: 'mocha-unfunk-reporter'
+        },
+        src: ['tests/acceptance/*_test.js']
       }
     }
 

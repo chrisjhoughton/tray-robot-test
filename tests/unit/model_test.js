@@ -1,6 +1,6 @@
 var assert = require('assert');
 var _      = require('lodash');
-var Model  = require('../lib/model');
+var Model  = require('../../lib/model');
 
 
 describe('#model', function () {

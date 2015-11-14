@@ -217,13 +217,10 @@ describe('#model', function () {
       assert.strictEqual(instance._position.x, 4);   
 
       instance.move('E');
-      assert.strictEqual(instance._position.x, 5);  
+      assert.strictEqual(instance._position.x, 4); // skidding  
 
       instance.move('E');
-      assert.strictEqual(instance._position.x, 5); // skidding
-
-      instance.move('E');
-      assert.strictEqual(instance._position.x, 5); // skidding
+      assert.strictEqual(instance._position.x, 4); // skidding
     });
 
     it('should move up for N, bounded', function () {
@@ -237,13 +234,11 @@ describe('#model', function () {
       assert.strictEqual(instance._position.y, 5);   
 
       instance.move('N');
-      assert.strictEqual(instance._position.y, 6);  
+      assert.strictEqual(instance._position.y, 5); // skidding  
 
       instance.move('N');
-      assert.strictEqual(instance._position.y, 6); // skidding
+      assert.strictEqual(instance._position.y, 5); // skidding
 
-      instance.move('N');
-      assert.strictEqual(instance._position.y, 6); // skidding
     });
 
     it('should move down for S, bounded', function () {
@@ -312,6 +307,16 @@ describe('#model', function () {
     it('should be 2 with two pieces of cleaned dirt', function () {
       instance._dirt = [{ x: 1, y: 1, cleaned: true }, { x: 2, y: 3, cleaned: true }, { x: 4, y: 1, cleaned: false }];
       assert.strictEqual(instance.countCleaned(), 2);
+    });
+
+  });
+
+  describe('#getPosition', function () {
+
+    it('should get the current position', function () {
+      instance.setPosition(3, 2);
+
+      assert.deepEqual(instance.getPosition(), { x: 3, y: 2 });
     });
 
   });

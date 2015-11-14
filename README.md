@@ -1,11 +1,21 @@
 # tray-robot-test
 
+Hi tray.io team, thanks for reading over this! The full solution is working, 
+and fully tested with unit, acceptance, and QA tests.
+
+## Dependencies
+
+* Node.js version (ideally `4.x.x` or later)
+* NPM 
+* Grunt CLI
+
 ## Installation & running
 
 1. Clone this repository
 2. Run `npm install`
 3. Set the `input.txt` file contents with valid input contents
 4. Run `npm start`
+5. The output will be logged to the console
 
 ## Tests
 

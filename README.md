@@ -1,5 +1,20 @@
 # tray-robot-test
 
+## Installation & running
+
+1. Clone this repository
+2. Run `npm install`
+3. Set the `input.txt` file contents with valid input contents
+4. Run `npm start`
+
+## Tests
+
+To run unit & acceptance tests:
+
+```
+grunt test
+```
+
 ## Assumptions
 
 * The input is always complete & valid:

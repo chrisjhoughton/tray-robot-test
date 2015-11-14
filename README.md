@@ -6,6 +6,7 @@
   * non-zero width & height
   * co-ordinates always sit within the grid
   * directions are only `NESW`
+* It's possible for big piles of dirt to be in one cell - hoovering over the cell will result in hoovering everything up
 
 
 ## The grid

@@ -222,6 +222,35 @@ describe('Acceptance', function () {
   });
 
 
+  describe('example 7 (hoover up on first placement)', function () {
+
+    before(function (done) {
+      var lines = [
+        '3 4',
+        '1 1',
+
+        // dirt
+        '1 1',
+
+        'N'
+      ];
+
+      writeToTestInput(lines).done(done);
+    });
+
+    it('should be correct', function (done) {
+      run('input.test.txt').done(function (output) {
+        var arr = output.split('\n');
+        assert.strictEqual(arr[0], '1 2');
+        assert.strictEqual(arr[1], '1');
+
+        done();
+      });
+    });
+
+  });
+
+
   // Remove the test file after finish
   after(function (done) {
     fs.unlink(__dirname+'/../../input.test.txt', done);

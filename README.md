@@ -1,1 +1,3 @@
 # tray-robot-test
+
+## Assumptions

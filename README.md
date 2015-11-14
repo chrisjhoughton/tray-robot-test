@@ -38,13 +38,13 @@ grunt test
 
 As mentioned in the task:
 
-* If there are X columns and Y rows, the number of cells is X x Y
-* The bottom left cell is the original, with co-ordinates (0, 0)
+* If there are X columns and Y rows, the number of cells is `X x Y`
+* The bottom left cell is the original, with co-ordinates `(0, 0)`
 
 This is slightly counter intuitive, and means that the co-ordinates are actually __one less__ 
 than the number of cells along.
 
-For example, with a 3x4 grid:
+For example, here are the co-ordinates for each cell in a 3x4 grid:
 
 ```
 | 0,3 | 1,3 | 2,3 |

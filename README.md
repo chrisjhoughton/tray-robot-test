@@ -39,7 +39,7 @@ grunt test
 As mentioned in the task:
 
 * If there are X columns and Y rows, the number of cells is `X x Y`
-* The bottom left cell is the original, with co-ordinates `(0, 0)`
+* The bottom left cell is the original, with co-ordinates `(0,0)`
 
 This is slightly counter intuitive, and means that the co-ordinates are actually __one less__ 
 than the number of cells along.

@@ -31,6 +31,7 @@ grunt test
   * non-zero width & height
   * co-ordinates always sit within the grid
   * directions are only `NESW`
+  * All key lines are added
 * It's possible for big piles of dirt to be in one cell - hoovering over the cell will result in hoovering everything up
 * The grid is structured as below - meaning the hoover takes up the space of one cell, rather than a single point 
 

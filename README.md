@@ -1,7 +1,7 @@
 # tray-robot-test
 
 Hi tray.io team, thanks for reading over this! The full solution is working, 
-and fully tested with unit, acceptance, and QA tests.
+and fully tested with unit, acceptance, and QA tests. Hopefully I haven't missed anything!
 
 ## Dependencies
 

@@ -54,5 +54,5 @@ For example, here are the co-ordinates for each cell in a 5x4 grid:
 | 0,0 | 1,0 | 2,0 | 3,0 | 4,0 |
 ```
 
-The above is slightly counter intuitive due to the first cell being zero. It also means that when the 
-hoover gets to the `4,y` and `x,3` co-ordinates that they've reached the edge of the room.
+This also means that when the hoover gets to the `4,y` and `x,3` co-ordinates that 
+they've reached the edge of the room.
